@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const truncateTitle = (title, maxLength) => {
   if (title.length > maxLength) {
@@ -41,6 +42,9 @@ return (
                 >
                   Add to Cart
                 </button>
+                <Link to={`/product/${product.id}`} className="btn btn-primary">
+                  View Details
+                </Link>
               </div>
             </div>
           </div>
