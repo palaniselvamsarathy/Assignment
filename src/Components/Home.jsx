@@ -35,16 +35,18 @@ return (
               <img src={product.image} className="card-img-top mx-auto d-block pro-image" alt={product.title}  />
               <div className="card-body">
                 <h5 className="card-title">{truncateTitle(product.title, 30)}</h5>
-                <p className="card-text">Price: ${product.price}</p>
-                <button
-                  className="btn btn-primary"
-                  onClick={() => addToCart(product.id)}
-                >
-                  Add to Cart
-                </button>
-                <Link to={`/product/${product.id}`} className="btn btn-primary">
-                  View Details
-                </Link>
+                <p className="card-text">Price: <span className=' price'>${product.price}</span></p>
+                <div className='details'>
+                  <button
+                    className="btn btn-primary"
+                    onClick={() => addToCart(product.id)}
+                  >
+                    Add to Cart
+                  </button>
+                  <Link to={`/product/${product.id}`} className="btn btn-primary">
+                    View Details
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
