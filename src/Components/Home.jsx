@@ -22,7 +22,6 @@ const Home = ({addCart}) => {
   }, []); 
   
   const addToCart = (productId) => {
-    // Check if the product is already in the cart
     const productInCart = cart.find(product => product.id === productId);
 
     if (productInCart) {

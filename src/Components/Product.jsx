@@ -38,11 +38,11 @@ const Product = ({ match }) => {
   return (
     <div className="container mt-5">
       <div className="row">
-        {/* Left side: Product Image */}
+        
         <div className="col-md-6">
           <img src={product.image} className="img-fluid pro-det-image" alt={product.title} />
         </div>
-        {/* Right side: Product Details */}
+
         <div className="col-md-6 mt-5" >
           <h2>{product.title}</h2>
           <p>Price: ${product.price}</p>
